@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Servicios from './pages/Servicios';
+import RitualCorporal from './pages/RitualCorporal';
 import Precios from './pages/Precios';
 // import Blog from './pages/Blog';
 import SobreMi from './pages/SobreMi';
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/servicios" element={<Servicios />} />
+          <Route path="/ritual-corporal" element={<RitualCorporal />} />
           <Route path="/precios" element={<Precios />} />
           {/* <Route path="/blog" element={<Blog />} /> */}
           <Route path="/sobre-mi" element={<SobreMi />} />

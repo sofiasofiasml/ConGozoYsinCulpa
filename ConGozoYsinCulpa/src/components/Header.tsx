@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Sparkles, DollarSign, BookOpen, Heart, User, Mail, Menu, X } from 'lucide-react';
+import { Home, Sparkles, DollarSign, Heart, User, Mail, Menu, X, ChevronDown } from 'lucide-react';
 import './Header.css';
 
 const Header = () => {
 	const [open, setOpen] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
+	const [serviciosOpen, setServiciosOpen] = useState(false);
 	const location = useLocation();
 
 	useEffect(() => {
@@ -29,16 +30,22 @@ const Header = () => {
 	}, [open]);
 
 	const handleToggle = () => setOpen((prev) => !prev);
-	const handleClose = () => setOpen(false);
+	const handleClose = () => {
+		setOpen(false);
+		setServiciosOpen(false);
+	};
 
 	const navItems = [
 		{ path: '/', label: 'Inicio', icon: <Home size={18} /> },
-		{ path: '/servicios', label: 'Servicios', icon: <Sparkles size={18} /> },
 		{ path: '/precios', label: 'Precios', icon: <DollarSign size={18} /> },
-		// { path: '/blog', label: 'Blog', icon: <BookOpen size={18} /> },
 		{ path: '/circulo-mujeres', label: 'Círculo de Mujeres', icon: <Heart size={18} /> },
 		{ path: '/sobre-mi', label: 'Sobre mí', icon: <User size={18} /> },
 		{ path: '/contacto', label: 'Contacto', icon: <Mail size={18} /> }
+	];
+
+	const serviciosSubmenu = [
+		{ path: '/servicios', label: 'Todos los Servicios' },
+		{ path: '/ritual-corporal', label: 'Ritual Corporal Femenino' }
 	];
 
 	return (
@@ -81,6 +88,37 @@ const Header = () => {
 								<span className="nav-text">{item.label}</span>
 							</Link>
 						))}
+
+						{/* Servicios Dropdown */}
+						<div
+							className="header__nav-dropdown"
+							onMouseEnter={() => setServiciosOpen(true)}
+							onMouseLeave={() => setServiciosOpen(false)}
+						>
+							<button
+								className={`header__nav-link header__nav-dropdown-trigger${location.pathname === '/servicios' || location.pathname === '/ritual-corporal' ? ' active' : ''
+									}`}
+								onClick={() => setServiciosOpen(!serviciosOpen)}
+							>
+								<span className="nav-icon"><Sparkles size={18} /></span>
+								<span className="nav-text">Servicios</span>
+								<ChevronDown size={16} className={`dropdown-icon${serviciosOpen ? ' open' : ''}`} />
+							</button>
+
+							<div className={`header__dropdown-menu${serviciosOpen ? ' open' : ''}`}>
+								{serviciosSubmenu.map((subItem) => (
+									<Link
+										key={subItem.path}
+										to={subItem.path}
+										className={`header__dropdown-item${location.pathname === subItem.path ? ' active' : ''}`}
+										onClick={handleClose}
+									>
+										{subItem.label}
+									</Link>
+								))}
+							</div>
+						</div>
+
 						<Link
 							to="/contacto"
 							className="header__cta"
