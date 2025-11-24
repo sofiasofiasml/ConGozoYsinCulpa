@@ -5,85 +5,8 @@
   max-width: 100%;
   overflow-x: hidden;
   background-color: var(--color-bg);
-}
-
-/* ===== HERO SECTION ===== */
-.hero-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 4rem;
-  padding: 4rem 6rem;
-  min-height: 85vh;
-  position: relative;
-}
-
-.hero-content {
-  max-width: 600px;
-  animation: fadeIn 1s ease-out;
-}
-
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background-color: rgba(93, 112, 82, 0.1);
-  /* Primary with opacity */
-  color: var(--color-primary);
-  padding: 0.5rem 1rem;
-  border-radius: 50px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.hero-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 4rem;
-  line-height: 1.1;
-  color: var(--color-text);
-  margin-bottom: 1.5rem;
-}
-
-.italic-accent {
-  font-style: italic;
-  color: var(--color-primary);
-  font-weight: 400;
-}
-
-.hero-subtitle {
-  font-size: 1.2rem;
-  color: var(--color-text-light);
-  line-height: 1.6;
-  margin-bottom: 2.5rem;
-  max-width: 90%;
-}
-
-.primary-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.8rem;
-  background-color: var(--color-primary);
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 50px;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(93, 112, 82, 0.2);
-}
-
-/* Home.css: Elegant, Minimal, and Mature Design */
-
-.home-container {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-  background-color: var(--color-bg);
+  padding-top: 80px;
+  /* Account for fixed header */
 }
 
 /* ===== HERO SECTION ===== */

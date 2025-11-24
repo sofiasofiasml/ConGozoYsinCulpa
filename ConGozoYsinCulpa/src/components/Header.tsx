@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
-
+import { Link, useLocation } from 'react-router-dom';
+import { Home, Sparkles, Heart, User, Mail, Menu, X } from 'lucide-react';
 import './Header.css';
 
 const Header = () => {
 	const [open, setOpen] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
-	const [activeLink, setActiveLink] = useState('/');
+	const location = useLocation();
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -29,29 +30,23 @@ const Header = () => {
 
 	const handleToggle = () => setOpen((prev) => !prev);
 	const handleClose = () => setOpen(false);
-	const handleLinkClick = (path: string) => {
-		setActiveLink(path);
-		handleClose();
-	};
 
 	const navItems = [
-		{ path: '/', label: 'Inicio', icon: '🏠' },
-		{ path: '/servicios', label: 'Servicios', icon: '✨' },
-		{ path: '/circulo-mujeres', label: 'Círculo de Mujeres', icon: '🌙' },
-		{ path: '/sobre-mi', label: 'Sobre mí', icon: '💜' },
-		{ path: '/contacto', label: 'Contacto', icon: '📧' }
+		{ path: '/', label: 'Inicio', icon: <Home size={18} /> },
+		{ path: '/servicios', label: 'Servicios', icon: <Sparkles size={18} /> },
+		{ path: '/circulo-mujeres', label: 'Círculo de Mujeres', icon: <Heart size={18} /> },
+		{ path: '/sobre-mi', label: 'Sobre mí', icon: <User size={18} /> },
+		{ path: '/contacto', label: 'Contacto', icon: <Mail size={18} /> }
 	];
 
 	return (
 		<>
-			
-
 			<header className={`header${scrolled ? ' header--scrolled' : ''}`}>
 				<div className="header__container">
-					<a 
-						href="#" 
-						className="header__logo" 
-						onClick={(e) => { e.preventDefault(); handleLinkClick('/'); }}
+					<Link
+						to="/"
+						className="header__logo"
+						onClick={handleClose}
 					>
 						<div className="header__logo-container">
 							<img
@@ -61,45 +56,41 @@ const Header = () => {
 							/>
 						</div>
 						<h1>Con Gozo y Sin Culpa</h1>
-					</a>
+					</Link>
 
-					<button 
+					<button
 						className={`header__menu-toggle${open ? ' active' : ''}`}
-						onClick={handleToggle} 
+						onClick={handleToggle}
 						aria-label={open ? "Cerrar menú" : "Abrir menú"}
 						aria-expanded={open}
 					>
-						<span className="hamburger-line"></span>
-						<span className="hamburger-line"></span>
-						<span className="hamburger-line"></span>
+						{open ? <X size={24} /> : <Menu size={24} />}
 					</button>
 
 					<nav className={`header__nav${open ? ' open' : ''}`}>
 						{navItems.map((item) => (
-							<a
+							<Link
 								key={item.path}
-								href={item.path}
-								className={`header__nav-link${activeLink === item.path ? ' active' : ''}`}
-								onClick={(e) => { e.preventDefault(); handleLinkClick(item.path); }}
+								to={item.path}
+								className={`header__nav-link${location.pathname === item.path ? ' active' : ''}`}
+								onClick={handleClose}
 							>
 								<span className="nav-icon">{item.icon}</span>
 								<span className="nav-text">{item.label}</span>
-							</a>
+							</Link>
 						))}
-						<a 
-							href="/contacto" 
+						<Link
+							to="/contacto"
 							className="header__cta"
-							onClick={(e) => { e.preventDefault(); handleLinkClick('/contacto'); }}
+							onClick={handleClose}
 						>
 							Agenda tu sesión
-						</a>
+						</Link>
 					</nav>
 				</div>
 
 				{open && <div className="header__overlay" onClick={handleClose}></div>}
 			</header>
-
-		
 		</>
 	);
 };
