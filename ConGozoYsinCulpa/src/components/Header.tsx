@@ -38,14 +38,14 @@ const Header = () => {
 	const navItems = [
 		{ path: '/', label: 'Inicio', icon: <Home size={18} /> },
 		{ path: '/precios', label: 'Precios', icon: <DollarSign size={18} /> },
-		{ path: '/circulo-mujeres', label: 'Círculo de Mujeres', icon: <Heart size={18} /> },
 		{ path: '/sobre-mi', label: 'Sobre mí', icon: <User size={18} /> },
 		{ path: '/contacto', label: 'Contacto', icon: <Mail size={18} /> }
 	];
 
 	const serviciosSubmenu = [
 		{ path: '/servicios', label: 'Todos los Servicios' },
-		{ path: '/ritual-corporal', label: 'Ritual Corporal Femenino' }
+		{ path: '/ritual-corporal', label: 'Ritual Corporal Femenino' },
+		{ path: '/circulo-mujeres', label: 'Círculo de Mujeres' }
 	];
 
 	return (
@@ -96,7 +96,9 @@ const Header = () => {
 							onMouseLeave={() => setServiciosOpen(false)}
 						>
 							<button
-								className={`header__nav-link header__nav-dropdown-trigger${location.pathname === '/servicios' || location.pathname === '/ritual-corporal' ? ' active' : ''
+								className={`header__nav-link header__nav-dropdown-trigger${location.pathname === '/servicios' ||
+										location.pathname === '/ritual-corporal' ||
+										location.pathname === '/circulo-mujeres' ? ' active' : ''
 									}`}
 								onClick={() => setServiciosOpen(!serviciosOpen)}
 							>

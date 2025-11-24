@@ -1,0 +1,412 @@
+/* Círculo de Mujeres Page Styles - Warm Feminine Aesthetic */
+
+.circulo-page {
+    width: 100%;
+    background: linear-gradient(to bottom, #faf8f6, #fff);
+}
+
+/* Typography Hierarchy for SEO */
+.circulo-h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 600;
+    color: #3d2f2a;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.circulo-h2 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 600;
+    color: #3d2f2a;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.circulo-h3 {
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-weight: 500;
+    color: #5a4a42;
+    margin-bottom: 1rem;
+}
+
+/* Hero Section */
+.circulo-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 8rem 5% 6rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.circulo-hero-content {
+    padding-right: 2rem;
+}
+
+.circulo-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #e8a890 0%, #d89880 100%);
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.circulo-hero-subtitle {
+    font-size: 1.25rem;
+    color: #6b5b54;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.circulo-hero-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(232, 168, 144, 0.2);
+}
+
+.circulo-hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Container */
+.circulo-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+/* Section Spacing */
+.circulo-section {
+    padding: 5rem 0;
+}
+
+/* What is Section */
+.circulo-what {
+    background: linear-gradient(135deg, #fef5f1 0%, #faf8f6 100%);
+}
+
+.circulo-content-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.circulo-text-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #5a4a42;
+    margin-bottom: 1.5rem;
+}
+
+.circulo-highlight {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(232, 168, 144, 0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #e8a890;
+    color: #5a4a42;
+    font-weight: 500;
+}
+
+.circulo-image-box {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(232, 168, 144, 0.15);
+}
+
+.circulo-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Benefits Section */
+.circulo-benefits {
+    background: #fff;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.benefit-card {
+    background: linear-gradient(135deg, #fef5f1 0%, #fff 100%);
+    padding: 2.5rem;
+    border-radius: 16px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(232, 168, 144, 0.1);
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(232, 168, 144, 0.2);
+}
+
+.benefit-icon {
+    color: #e8a890;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.benefit-card p {
+    color: #6b5b54;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+/* Structure Section */
+.circulo-structure {
+    background: linear-gradient(135deg, #faf8f6 0%, #fef5f1 100%);
+}
+
+.circulo-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #5a4a42;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.structure-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.structure-item {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(232, 168, 144, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.structure-item:hover {
+    transform: translateX(10px);
+}
+
+.structure-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e8a890;
+    line-height: 1;
+    min-width: 60px;
+}
+
+.structure-content {
+    flex: 1;
+}
+
+.structure-content p {
+    color: #6b5b54;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+/* Themes Section */
+.circulo-themes {
+    background: #fff;
+}
+
+.themes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.theme-card {
+    background: linear-gradient(135deg, #fef5f1 0%, #faf8f6 100%);
+    padding: 1.8rem;
+    border-radius: 12px;
+    border-left: 4px solid #e8a890;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.theme-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(232, 168, 144, 0.15);
+}
+
+.theme-icon {
+    color: #e8a890;
+    flex-shrink: 0;
+}
+
+.theme-card p {
+    color: #5a4a42;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+/* For Who Section */
+.circulo-for-who {
+    background: linear-gradient(135deg, #fef5f1 0%, #faf8f6 100%);
+}
+
+.for-who-intro {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #5a4a42;
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+}
+
+.for-who-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.for-who-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 4px solid #e8a890;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.for-who-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(232, 168, 144, 0.15);
+}
+
+.for-who-card p {
+    color: #5a4a42;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+/* CTA Section */
+.circulo-cta {
+    background: linear-gradient(135deg, #e8a890 0%, #d89880 100%);
+    padding: 6rem 5%;
+    text-align: center;
+}
+
+.circulo-cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-icon {
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.circulo-cta .circulo-h2 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.circulo-cta-text {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    opacity: 0.95;
+}
+
+.circulo-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: #fff;
+    color: #e8a890;
+    padding: 1.2rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.circulo-cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+    background: #fef5f1;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .circulo-hero {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 6rem 5% 4rem;
+    }
+
+    .circulo-hero-content {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .circulo-content-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .themes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .for-who-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .structure-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .structure-number {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .circulo-section {
+        padding: 3rem 0;
+    }
+
+    .circulo-hero {
+        padding: 5rem 5% 3rem;
+    }
+}
