@@ -5,10 +5,11 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Servicios from './pages/Servicios';
 import RitualCorporal from './pages/RitualCorporal';
+import CirculoMujeres from './pages/CirculoMujeres';
+import MembresiaMensual from './pages/MembresiaMensual';
 import Precios from './pages/Precios';
 // import Blog from './pages/Blog';
 import SobreMi from './pages/SobreMi';
-import CirculoMujeres from './pages/CirculoMujeres';
 import Contacto from './pages/Contacto';
 import ScrollToTop from './components/ScrollToTop';
 import './App.css';
@@ -23,10 +24,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/servicios" element={<Servicios />} />
           <Route path="/ritual-corporal" element={<RitualCorporal />} />
+          <Route path="/circulo-mujeres" element={<CirculoMujeres />} />
+          <Route path="/membresia-mensual" element={<MembresiaMensual />} />
           <Route path="/precios" element={<Precios />} />
           {/* <Route path="/blog" element={<Blog />} /> */}
           <Route path="/sobre-mi" element={<SobreMi />} />
-          <Route path="/circulo-mujeres" element={<CirculoMujeres />} />
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </main>

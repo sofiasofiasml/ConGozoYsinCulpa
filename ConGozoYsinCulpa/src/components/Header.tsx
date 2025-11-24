@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Sparkles, DollarSign, Heart, User, Mail, Menu, X, ChevronDown } from 'lucide-react';
+import { Home, Sparkles, DollarSign, User, Mail, Menu, X, ChevronDown } from 'lucide-react';
 import './Header.css';
 
 const Header = () => {
@@ -45,7 +45,8 @@ const Header = () => {
 	const serviciosSubmenu = [
 		{ path: '/servicios', label: 'Todos los Servicios' },
 		{ path: '/ritual-corporal', label: 'Ritual Corporal Femenino' },
-		{ path: '/circulo-mujeres', label: 'Círculo de Mujeres' }
+		{ path: '/circulo-mujeres', label: 'Círculo de Mujeres' },
+		{ path: '/membresia-mensual', label: 'Membresía Lunar' }
 	];
 
 	return (
@@ -98,7 +99,8 @@ const Header = () => {
 							<button
 								className={`header__nav-link header__nav-dropdown-trigger${location.pathname === '/servicios' ||
 										location.pathname === '/ritual-corporal' ||
-										location.pathname === '/circulo-mujeres' ? ' active' : ''
+										location.pathname === '/circulo-mujeres' ||
+										location.pathname === '/membresia-mensual' ? ' active' : ''
 									}`}
 								onClick={() => setServiciosOpen(!serviciosOpen)}
 							>
