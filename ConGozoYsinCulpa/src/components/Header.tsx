@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Sparkles, Heart, User, Mail, Menu, X } from 'lucide-react';
+import { Home, Sparkles, DollarSign, BookOpen, Heart, User, Mail, Menu, X } from 'lucide-react';
 import './Header.css';
 
 const Header = () => {
@@ -34,6 +34,8 @@ const Header = () => {
 	const navItems = [
 		{ path: '/', label: 'Inicio', icon: <Home size={18} /> },
 		{ path: '/servicios', label: 'Servicios', icon: <Sparkles size={18} /> },
+		{ path: '/precios', label: 'Precios', icon: <DollarSign size={18} /> },
+		// { path: '/blog', label: 'Blog', icon: <BookOpen size={18} /> },
 		{ path: '/circulo-mujeres', label: 'Círculo de Mujeres', icon: <Heart size={18} /> },
 		{ path: '/sobre-mi', label: 'Sobre mí', icon: <User size={18} /> },
 		{ path: '/contacto', label: 'Contacto', icon: <Mail size={18} /> }

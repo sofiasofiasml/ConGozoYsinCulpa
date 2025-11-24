@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Servicios from './pages/Servicios';
+import Precios from './pages/Precios';
+// import Blog from './pages/Blog';
 import SobreMi from './pages/SobreMi';
 import CirculoMujeres from './pages/CirculoMujeres';
 import Contacto from './pages/Contacto';
@@ -19,6 +21,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/servicios" element={<Servicios />} />
+          <Route path="/precios" element={<Precios />} />
+          {/* <Route path="/blog" element={<Blog />} /> */}
           <Route path="/sobre-mi" element={<SobreMi />} />
           <Route path="/circulo-mujeres" element={<CirculoMujeres />} />
           <Route path="/contacto" element={<Contacto />} />
