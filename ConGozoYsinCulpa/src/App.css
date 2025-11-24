@@ -1,14 +1,21 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-  --color-bg: #fff7fb;
-  --color-primary: #b983ff;
-  --color-secondary: #f6c1c7;
-  --color-accent: #ffd6a5;
-  --color-text: #5a3e36;
-  --color-link: #b983ff;
-  --color-link-hover: #a259c6;
+  /* Palette: Warm Eucalyptus & Soft Earth */
+  --color-bg: #FAFAF9;
+  /* Very warm off-white/stone */
+  --color-primary: #6B7F6E;
+  /* Eucalyptus Green (softer than Sage) */
+  --color-secondary: #EBE5DF;
+  /* Warm Taupe/Sand */
+  --color-accent: #C8A47E;
+  /* Soft Bronze/Clay */
+  --color-text: #44403C;
+  /* Warm Charcoal */
+  --color-text-light: #78716C;
+  /* Warm Grey */
+  --color-link: #6B7F6E;
+  --color-link-hover: #506152;
 }
 
 body {
@@ -27,7 +34,7 @@ body {
   text-align: left;
   background: #fff;
   border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(185,131,255,0.08);
+  box-shadow: 0 4px 24px rgba(185, 131, 255, 0.08);
   min-height: 90vh;
 }
 
@@ -38,7 +45,9 @@ main {
   min-height: 60vh;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Playfair Display', serif;
   color: var(--color-primary);
   margin-top: 0.5em;
@@ -50,7 +59,8 @@ h2 {
   font-weight: 700;
 }
 
-p, li {
+p,
+li {
   font-size: 1.1rem;
   line-height: 1.7;
   color: var(--color-text);
@@ -65,6 +75,7 @@ a {
   text-decoration: none;
   transition: color 0.2s;
 }
+
 a:hover {
   color: var(--color-link-hover);
 }
@@ -73,7 +84,7 @@ a:hover {
 .wellness-card {
   background: var(--color-secondary);
   border-radius: 16px;
-  box-shadow: 0 2px 12px rgba(246,193,199,0.12);
+  box-shadow: 0 2px 12px rgba(246, 193, 199, 0.12);
   padding: 2rem 1.5rem;
   margin: 2rem 0;
   text-align: center;
@@ -92,6 +103,7 @@ a:hover {
   padding: 0;
   list-style: none;
 }
+
 .wellness-card li {
   background: var(--color-accent);
   color: var(--color-text);
@@ -99,7 +111,7 @@ a:hover {
   padding: 0.7em 1.2em;
   font-weight: 600;
   font-size: 1rem;
-  box-shadow: 0 1px 4px rgba(255,214,165,0.10);
+  box-shadow: 0 1px 4px rgba(255, 214, 165, 0.10);
 }
 
 /* Responsive */
@@ -110,6 +122,7 @@ a:hover {
     box-shadow: none;
     padding: 0.5rem 0.5rem 0 0.5rem;
   }
+
   main {
     padding: 0.5rem 0 1.5rem 0;
   }
@@ -119,14 +132,18 @@ a:hover {
   .wellness-card {
     padding: 1.2rem 0.5rem;
   }
+
   .wellness-card ul {
     flex-direction: column;
     gap: 0.7rem;
   }
+
   h2 {
     font-size: 1.3rem;
   }
-  p, li {
+
+  p,
+  li {
     font-size: 1rem;
   }
 }

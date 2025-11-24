@@ -1,94 +1,129 @@
 import './Home.css';
+import { Flower2, Heart, Sparkles, ArrowRight, Leaf, Sun } from 'lucide-react';
 
 const proyectos = [
 	{
-		titulo: 'Masajes terapéuticos',
+		titulo: 'Masajes Terapéuticos',
 		img: '/img/masaje.jpg',
-		desc: 'Relajación y bienestar físico y emocional.'
+		desc: 'Relajación profunda para restaurar tu equilibrio físico y emocional.',
+		icon: <Flower2 size={24} />
 	},
 	{
 		titulo: 'Círculo de Mujeres',
 		img: '/img/yoga.jpg',
-		desc: 'Encuentros de apoyo y crecimiento personal.'
+		desc: 'Un espacio seguro de conexión, escucha y crecimiento compartido.',
+		icon: <Heart size={24} />
 	},
 	{
-		titulo: 'Talleres de autocuidado',
+		titulo: 'Talleres de Autocuidado',
 		img: '/img/taller.jpg',
-		desc: 'Espacios para aprender y compartir.'
+		desc: 'Herramientas prácticas para cultivar tu bienestar diario.',
+		icon: <Sun size={24} />
 	},
 	{
-		titulo: 'Acompañamiento individual',
+		titulo: 'Acompañamiento Individual',
 		img: '/img/acompanamiento.jpg',
-		desc: 'Procesos personalizados para tu bienestar.'
+		desc: 'Sesiones personalizadas para guiar tu proceso de transformación.',
+		icon: <Sparkles size={24} />
 	},
 ];
 
 const Home = () => (
-	<section className="home-root">
-		<div className="home-hero">
-			<div className="hero-decoration"></div>
-			<img
-				src="/img/logo-congozo.png"
-				alt="Con Gozo y Sin Culpa logo"
-				className="home-logo"
-			/>
-			<h2 className="hero-title">Bienvenida a Con Gozo y Sin Culpa</h2>
-			<p className="hero-subtitle">Un espacio de bienestar, autoconocimiento y conexión femenina</p>
-		</div>
+	<div className="home-container">
+		{/* Hero Section */}
+		<section className="hero-section">
+			<div className="hero-content">
+				<div className="hero-badge">
+					<Leaf size={16} />
+					<span>Bienestar Integral</span>
+				</div>
+				<h1 className="hero-title">
+					Con Gozo y <span className="italic-accent">Sin Culpa</span>
+				</h1>
+				<p className="hero-subtitle">
+					Un refugio para el autoconocimiento, la sanación y la conexión femenina.
+					Redescubre tu poder interior en un espacio seguro y amoroso.
+				</p>
+				<button className="primary-button">
+					Comienza tu Viaje <ArrowRight size={18} />
+				</button>
+			</div>
+			<div className="hero-image-container">
+				<img
+					src="/img/logo.avif"
+					alt="Con Gozo y Sin Culpa"
+					className="hero-main-image"
+				/>
+				<div className="hero-decoration-circle"></div>
+			</div>
+		</section>
 
-		<div className="wellness-card">
-			<div className="wellness-decoration"></div>
-			<h3 className="wellness-title">Tu camino hacia el bienestar</h3>
-			<p className="wellness-intro">
-				Este proyecto nace para acompañar a mujeres en su camino de autoconocimiento, autocuidado y bienestar a través de masajes terapéuticos y espacios de círculo de mujeres.
-			</p>
-			<div className="wellness-features">
-				<div className="feature-item">
-					<span className="feature-icon">🌸</span>
-					<h4>Masajes terapéuticos</h4>
-					<p>Relajación profunda y sanación</p>
+		{/* Philosophy Section */}
+		<section className="philosophy-section">
+			<div className="section-header">
+				<h2 className="section-title">Nuestra Esencia</h2>
+				<div className="section-divider"></div>
+				<p className="section-description">
+					Creemos en el poder de la suavidad y la escucha. Este proyecto nace para acompañar
+					a mujeres que buscan reencontrarse consigo mismas, soltar cargas y vivir desde
+					el placer y la autenticidad.
+				</p>
+			</div>
+
+			<div className="features-grid">
+				<div className="feature-card">
+					<div className="feature-icon-wrapper"><Flower2 size={28} /></div>
+					<h3>Sanación</h3>
+					<p>Liberar tensiones y emociones estancadas a través del cuerpo.</p>
 				</div>
-				<div className="feature-item">
-					<span className="feature-icon">🌙</span>
-					<h4>Círculo de mujeres</h4>
-					<p>Encuentros sagrados de hermandad</p>
+				<div className="feature-card">
+					<div className="feature-icon-wrapper"><Heart size={28} /></div>
+					<h3>Comunidad</h3>
+					<p>Tejer redes de apoyo donde cada voz es escuchada y valorada.</p>
 				</div>
-				<div className="feature-item">
-					<span className="feature-icon">✨</span>
-					<h4>Acompañamiento</h4>
-					<p>Procesos personalizados</p>
+				<div className="feature-card">
+					<div className="feature-icon-wrapper"><Sparkles size={28} /></div>
+					<h3>Transformación</h3>
+					<p>Renovar tu energía y perspectiva para una vida más plena.</p>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<section className="proyectos-section">
-			<h3 className="section-title">Nuestros servicios</h3>
-			<p className="section-subtitle">Descubre las experiencias que tenemos para ti</p>
-			<div className="proyectos-scroll">
+		{/* Services Section */}
+		<section className="services-section">
+			<h2 className="section-title text-center">Experiencias para Ti</h2>
+			<p className="section-subtitle text-center">Descubre nuestros caminos hacia el bienestar</p>
+
+			<div className="services-grid">
 				{proyectos.map((p, i) => (
-					<div className="proyecto-card" key={i}>
-						<div className="proyecto-image-wrapper">
-							<img src={p.img} alt={p.titulo} className="proyecto-img" />
-							<div className="proyecto-overlay"></div>
+					<div className="service-card" key={i}>
+						<div className="service-image">
+							<img src={p.img} alt={p.titulo} />
+							<div className="service-overlay">
+								<button className="service-btn">Ver Detalles</button>
+							</div>
 						</div>
-						<div className="proyecto-info">
-							<h4>{p.titulo}</h4>
+						<div className="service-content">
+							<div className="service-header">
+								<span className="service-icon">{p.icon}</span>
+								<h3>{p.titulo}</h3>
+							</div>
 							<p>{p.desc}</p>
-							<button className="proyecto-btn">Más información</button>
 						</div>
 					</div>
 				))}
 			</div>
 		</section>
 
-		<section className="cta-section">
-			<div className="cta-content">
-				<h3>¿Lista para comenzar tu transformación?</h3>
-				<p>Únete a nuestra comunidad de mujeres que eligen vivir con gozo y sin culpa</p>
-				<button className="cta-button">Agenda tu primera sesión</button>
+		{/* CTA Section */}
+		<section className="cta-minimal">
+			<div className="cta-content-wrapper">
+				<h2>¿Lista para priorizarte?</h2>
+				<p>Tu bienestar no es un lujo, es una necesidad. Da el primer paso hoy.</p>
+				<button className="outline-button">Agenda tu Sesión</button>
 			</div>
 		</section>
-	</section>
+	</div>
 );
 
 export default Home;

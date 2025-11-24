@@ -53,7 +53,13 @@ const Header = () => {
 						className="header__logo" 
 						onClick={(e) => { e.preventDefault(); handleLinkClick('/'); }}
 					>
-						<span className="header__logo-icon">🌸</span>
+						<div className="header__logo-container">
+							<img
+								src="/img/logo.avif"
+								alt="Con Gozo y Sin Culpa logo"
+								className="header__logo-img"
+							/>
+						</div>
 						<h1>Con Gozo y Sin Culpa</h1>
 					</a>
 
