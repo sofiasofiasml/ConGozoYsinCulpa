@@ -7,11 +7,13 @@ import Servicios from './pages/Servicios';
 import SobreMi from './pages/SobreMi';
 import CirculoMujeres from './pages/CirculoMujeres';
 import Contacto from './pages/Contacto';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <main>
         <Routes>
