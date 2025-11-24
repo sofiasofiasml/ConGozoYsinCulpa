@@ -3,22 +3,22 @@ import './Home.css';
 const proyectos = [
 	{
 		titulo: 'Masajes terapéuticos',
-		img: '/img/masaje1.jpg',
+		img: '/img/masaje.jpg',
 		desc: 'Relajación y bienestar físico y emocional.'
 	},
 	{
 		titulo: 'Círculo de Mujeres',
-		img: '/img/circulo1.jpg',
+		img: '/img/yoga.jpg',
 		desc: 'Encuentros de apoyo y crecimiento personal.'
 	},
 	{
 		titulo: 'Talleres de autocuidado',
-		img: '/img/taller1.jpg',
+		img: '/img/taller.jpg',
 		desc: 'Espacios para aprender y compartir.'
 	},
 	{
 		titulo: 'Acompañamiento individual',
-		img: '/img/acompanamiento1.jpg',
+		img: '/img/acompanamiento.jpg',
 		desc: 'Procesos personalizados para tu bienestar.'
 	},
 ];
