@@ -1,0 +1,90 @@
+.servicios-page {
+    max-width: 1100px;
+}
+
+.services-intro {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.service-item {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item h3 {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-question {
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+}
+
+.service-cta {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.service-cta:hover {
+    background-color: var(--color-link-hover);
+}
+
+.why-natural-therapies {
+    background-color: var(--color-secondary);
+    padding: 4rem 3rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin: 3rem 0;
+}
+
+.reason-card h3 {
+    color: var(--color-text);
+    margin-bottom: 1rem;
+}
+
+.closing-statement {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    max-width: 700px;
+    margin: 0 auto;
+}
