@@ -41,6 +41,10 @@ const Home = () => {
 		setCurrentSlide((prev) => (prev - 1 + servicios.length) % servicios.length);
 	};
 
+	const goToSlide = (index: number) => {
+		setCurrentSlide(index);
+	};
+
 	return (
 		<div className="home-container">
 			{/* Hero Section */}
@@ -117,7 +121,7 @@ const Home = () => {
 					<div className="carousel-wrapper">
 						<div
 							className="carousel-track"
-							style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+							style={{ transform: `translateX(calc(-${currentSlide} * 100%))` }}
 						>
 							{servicios.map((servicio, index) => (
 								<div key={index} className="carousel-slide">
@@ -159,7 +163,7 @@ const Home = () => {
 						<button
 							key={index}
 							className={`carousel-dot ${index === currentSlide ? 'active' : ''}`}
-							onClick={() => setCurrentSlide(index)}
+							onClick={() => goToSlide(index)}
 							aria-label={`Ir a servicio ${index + 1}`}
 						></button>
 					))}
