@@ -394,7 +394,7 @@
 .carousel-btn:hover {
     background: var(--color-primary);
     color: white;
-    transform: scale(1.15);
+    /* transform: scale(1.15); */
     box-shadow: 0 8px 20px rgba(107, 127, 110, 0.3);
 }
 

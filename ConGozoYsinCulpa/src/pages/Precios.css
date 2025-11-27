@@ -8,7 +8,7 @@
 .precios-hero {
     text-align: center;
     padding: 4rem 2rem;
-    background: linear-gradient(135deg, var(--color-secondary) 0%, #fdfbf7 100%);
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-bg) 100%);
     border-radius: 30px;
     margin-bottom: 5rem;
     position: relative;
@@ -22,7 +22,7 @@
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--color-primary), #8ba390, var(--color-primary));
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent), var(--color-primary));
     background-size: 200% 100%;
     animation: shimmer 3s infinite;
 }
@@ -71,7 +71,7 @@
 }
 
 .contact-info a:hover {
-    color: #8ba390;
+    color: var(--color-link-hover);
 }
 
 /* Pricing Sections */
@@ -119,13 +119,13 @@
 
 .pricing-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(107, 127, 110, 0.15);
-    border-color: rgba(107, 127, 110, 0.2);
+    box-shadow: 0 20px 50px rgba(233, 30, 99, 0.15);
+    border-color: rgba(233, 30, 99, 0.2);
 }
 
 .pricing-card.featured {
     border-color: var(--color-primary);
-    box-shadow: 0 15px 40px rgba(107, 127, 110, 0.2);
+    box-shadow: 0 15px 40px rgba(233, 30, 99, 0.2);
 }
 
 .pricing-card.recommended {
@@ -150,19 +150,19 @@
 }
 
 .pricing-badge.info {
-    background: linear-gradient(135deg, #6b7f6e, #8ba390);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-link-hover));
     color: white;
 }
 
 .pricing-badge.promo {
-    background: linear-gradient(135deg, #ff6b6b, #ff8787);
+    background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
     color: white;
     animation: pulse 2s infinite;
 }
 
 .pricing-badge.premium {
-    background: linear-gradient(135deg, #ffd700, #ffed4e);
-    color: #333;
+    background: linear-gradient(135deg, var(--color-accent), #FFB6C1);
+    color: var(--color-text);
 }
 
 @keyframes pulse {
@@ -279,7 +279,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    background: linear-gradient(135deg, rgba(107, 127, 110, 0.1), rgba(139, 163, 144, 0.1));
+    background: linear-gradient(135deg, rgba(233, 30, 99, 0.1), rgba(248, 187, 217, 0.1));
     padding: 0.75rem 1rem;
     border-radius: 15px;
     margin-bottom: 1.5rem;
@@ -297,24 +297,23 @@
 /* CTA Button */
 .pricing-cta {
     width: 100%;
-    padding: 1rem 2rem;
-    background: linear-gradient(135deg, var(--color-primary), #8ba390);
+    padding: 1.2rem 2rem;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-link-hover));
     color: white;
     border: none;
     border-radius: 50px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(107, 127, 110, 0.3);
-    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
     letter-spacing: 0.5px;
 }
 
 .pricing-cta:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(107, 127, 110, 0.4);
-    background: linear-gradient(135deg, #8ba390, var(--color-primary));
+    box-shadow: 0 6px 20px rgba(233, 30, 99, 0.4);
+    background: linear-gradient(135deg, var(--color-link-hover), var(--color-primary));
 }
 
 .pricing-cta:active {
@@ -325,7 +324,7 @@
 .precios-footer-cta {
     text-align: center;
     padding: 4rem 2rem;
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    background: linear-gradient(135deg, var(--color-bg) 0%, white 100%);
     border-radius: 30px;
     margin-bottom: 4rem;
     border: 2px dashed var(--color-primary);
@@ -343,7 +342,7 @@
     margin-bottom: 2rem;
 }
 
-.primary-button {
+/* .primary-button {
     display: inline-block;
     padding: 1.2rem 3rem;
     background: linear-gradient(135deg, var(--color-primary), #8ba390);
@@ -362,7 +361,7 @@
 .primary-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(107, 127, 110, 0.4);
-}
+} */
 
 /* Responsive Design */
 @media (max-width: 768px) {

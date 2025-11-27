@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-  /* Palette: Warm Eucalyptus & Soft Earth */
-  --color-bg: #FAFAF9;
-  /* Very warm off-white/stone */
-  --color-primary: #6B7F6E;
-  /* Eucalyptus Green (softer than Sage) */
-  --color-secondary: #EBE5DF;
-  /* Warm Taupe/Sand */
-  --color-accent: #C8A47E;
-  /* Soft Bronze/Clay */
-  --color-text: #44403C;
-  /* Warm Charcoal */
-  --color-text-light: #78716C;
-  /* Warm Grey */
-  --color-link: #6B7F6E;
-  --color-link-hover: #506152;
+  /* Palette: Ultra Feminine Rose & Soft Blush */
+  --color-bg: #FFF5F5;
+  /* Very soft rose white */
+  --color-primary: #E91E63;
+  /* Bright feminine pink */
+  --color-secondary: #FCE4EC;
+  /* Soft pink blush */
+  --color-accent: #F8BBD9;
+  /* Soft rose pink */
+  --color-text: #4A148C;
+  /* Deep purple */
+  --color-text-light: #8E24AA;
+  /* Medium purple */
+  --color-link: #E91E63;
+  --color-link-hover: #C2185B;
 }
 
 body {

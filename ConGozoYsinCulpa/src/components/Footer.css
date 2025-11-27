@@ -3,13 +3,13 @@
 .footer {
   width: 100%;
   background: linear-gradient(135deg, 
-    rgba(244, 240, 236, 0.95) 0%, 
-    rgba(232, 196, 160, 0.85) 50%,
-    rgba(212, 165, 116, 0.9) 100%
+    rgba(255, 245, 245, 0.95) 0%, 
+    rgba(252, 228, 236, 0.85) 50%,
+    rgba(248, 187, 217, 0.9) 100%
   );
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-top: 1px solid rgba(212, 165, 116, 0.2);
+  border-top: 1px solid rgba(233, 30, 99, 0.2);
   color: var(--color-text);
   padding: 4rem 2rem 2.5rem;
   margin-top: auto;
@@ -25,7 +25,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><path d="M0,10 Q25,0 50,10 T100,10 V20 H0 Z" fill="rgba(212,165,116,0.1)"/></svg>') repeat-x;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><path d="M0,10 Q25,0 50,10 T100,10 V20 H0 Z" fill="rgba(233,30,99,0.1)"/></svg>') repeat-x;
   background-size: 200px 20px;
   opacity: 0.3;
   animation: wave 20s linear infinite;
@@ -85,7 +85,7 @@
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(212, 165, 116, 0.3);
+  border: 1px solid rgba(233, 30, 99, 0.3);
   position: relative;
   overflow: hidden;
 }
@@ -112,7 +112,7 @@
 .footer-links a:hover {
   color: white;
   transform: translateY(-3px) scale(1.1);
-  box-shadow: 0 10px 30px rgba(212, 165, 116, 0.4);
+  box-shadow: 0 10px 30px rgba(233, 30, 99, 0.4);
   border-color: var(--color-primary);
 }
 
@@ -137,8 +137,8 @@
 }
 
 @keyframes glow {
-  from { opacity: 0.4; box-shadow: 0 0 5px rgba(212, 165, 116, 0.3); }
-  to { opacity: 0.8; box-shadow: 0 0 15px rgba(212, 165, 116, 0.6); }
+  from { opacity: 0.4; box-shadow: 0 0 5px rgba(233, 30, 99, 0.3); }
+  to { opacity: 0.8; box-shadow: 0 0 15px rgba(233, 30, 99, 0.6); }
 }
 
 .footer p {

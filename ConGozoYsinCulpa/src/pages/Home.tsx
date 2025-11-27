@@ -115,7 +115,7 @@ const Home = () => {
 
 				<div className="carousel-container">
 					<button className="carousel-btn carousel-btn-prev" onClick={prevSlide} aria-label="Anterior">
-						<ChevronLeft size={24} />
+						<ChevronLeft size={20} />
 					</button>
 
 					<div className="carousel-wrapper">
@@ -154,7 +154,7 @@ const Home = () => {
 					</div>
 
 					<button className="carousel-btn carousel-btn-next" onClick={nextSlide} aria-label="Siguiente">
-						<ChevronRight size={24} />
+						<ChevronRight size={20} />
 					</button>
 				</div>
 
