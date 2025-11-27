@@ -1,5 +1,5 @@
 import './Home.css';
-import { Flower2, Heart, Sparkles, ArrowRight, Leaf, Sun, Moon, Star, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Flower2, Heart, Sparkles, ArrowRight, Leaf,  Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
