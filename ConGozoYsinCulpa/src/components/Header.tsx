@@ -93,14 +93,12 @@ const Header = () => {
 						{/* Servicios Dropdown */}
 						<div
 							className="header__nav-dropdown"
-							onMouseEnter={() => setServiciosOpen(true)}
-							onMouseLeave={() => setServiciosOpen(false)}
 						>
 							<button
 								className={`header__nav-link header__nav-dropdown-trigger${location.pathname === '/servicios' ||
-										location.pathname === '/ritual-corporal' ||
-										location.pathname === '/circulo-mujeres' ||
-										location.pathname === '/membresia-mensual' ? ' active' : ''
+									location.pathname === '/ritual-corporal' ||
+									location.pathname === '/circulo-mujeres' ||
+									location.pathname === '/membresia-mensual' ? ' active' : ''
 									}`}
 								onClick={() => setServiciosOpen(!serviciosOpen)}
 							>

@@ -1,32 +1,35 @@
-/* Membresía Mensual Page Styles - Warm Feminine Aesthetic */
+/* Membresía Mensual Page Styles - Ultra Feminine Rose & Soft Blush */
 
 .membresia-page {
     width: 100%;
-    background: linear-gradient(to bottom, #faf8f6, #fff);
+    background: linear-gradient(to bottom, var(--color-bg), #fff);
 }
 
 /* Typography Hierarchy for SEO */
 .membresia-h1 {
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 600;
-    color: #3d2f2a;
+    color: var(--color-text);
     line-height: 1.2;
     margin-bottom: 1.5rem;
+    font-family: 'Playfair Display', serif;
 }
 
 .membresia-h2 {
     font-size: clamp(1.75rem, 4vw, 2.5rem);
     font-weight: 600;
-    color: #3d2f2a;
+    color: var(--color-text);
     margin-bottom: 1.5rem;
     text-align: center;
+    font-family: 'Playfair Display', serif;
 }
 
 .membresia-h3 {
     font-size: clamp(1.25rem, 3vw, 1.75rem);
     font-weight: 500;
-    color: #5a4a42;
+    color: var(--color-text);
     margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
 }
 
 /* Hero Section */
@@ -48,7 +51,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: linear-gradient(135deg, #e8a890 0%, #d89880 100%);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-link-hover) 100%);
     color: white;
     padding: 0.5rem 1.2rem;
     border-radius: 50px;
@@ -59,7 +62,7 @@
 
 .membresia-hero-subtitle {
     font-size: 1.25rem;
-    color: #6b5b54;
+    color: var(--color-text-light);
     line-height: 1.8;
     margin-bottom: 2rem;
 }
@@ -74,13 +77,14 @@
 .price-amount {
     font-size: 3.5rem;
     font-weight: 700;
-    color: #e8a890;
+    color: var(--color-primary);
     line-height: 1;
+    font-family: 'Playfair Display', serif;
 }
 
 .price-period {
     font-size: 1.5rem;
-    color: #6b5b54;
+    color: var(--color-text-light);
     font-weight: 500;
 }
 
@@ -88,7 +92,7 @@
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 20px 60px rgba(232, 168, 144, 0.2);
+    box-shadow: 0 20px 60px rgba(233, 30, 99, 0.2);
 }
 
 .membresia-hero-image img {
@@ -112,7 +116,7 @@
 
 /* What is Section */
 .membresia-what {
-    background: linear-gradient(135deg, #fef5f1 0%, #faf8f6 100%);
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-bg) 100%);
 }
 
 .membresia-content-grid {
@@ -126,7 +130,7 @@
 .membresia-text-content p {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #5a4a42;
+    color: var(--color-text);
     margin-bottom: 1.5rem;
 }
 
@@ -134,18 +138,18 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    background: rgba(232, 168, 144, 0.1);
+    background: rgba(233, 30, 99, 0.1);
     padding: 1.5rem;
     border-radius: 12px;
-    border-left: 4px solid #e8a890;
-    color: #5a4a42;
+    border-left: 4px solid var(--color-primary);
+    color: var(--color-text);
     font-weight: 500;
 }
 
 .membresia-image-box {
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 10px 40px rgba(232, 168, 144, 0.15);
+    box-shadow: 0 10px 40px rgba(233, 30, 99, 0.15);
 }
 
 .membresia-image-box img {
@@ -168,35 +172,35 @@
 }
 
 .benefit-card {
-    background: linear-gradient(135deg, #fef5f1 0%, #fff 100%);
+    background: linear-gradient(135deg, var(--color-secondary) 0%, #fff 100%);
     padding: 2.5rem;
     border-radius: 16px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid rgba(232, 168, 144, 0.1);
+    border: 1px solid rgba(233, 30, 99, 0.1);
 }
 
 .benefit-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(232, 168, 144, 0.2);
+    box-shadow: 0 15px 40px rgba(233, 30, 99, 0.2);
 }
 
 .benefit-icon {
-    color: #e8a890;
+    color: var(--color-primary);
     margin-bottom: 1.5rem;
     display: flex;
     justify-content: center;
 }
 
 .benefit-card p {
-    color: #6b5b54;
+    color: var(--color-text-light);
     line-height: 1.6;
     font-size: 1.05rem;
 }
 
 /* Includes Section */
 .membresia-includes {
-    background: linear-gradient(135deg, #faf8f6 0%, #fef5f1 100%);
+    background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-secondary) 100%);
 }
 
 .includes-grid {
@@ -213,7 +217,7 @@
     background: #fff;
     padding: 1.5rem;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(232, 168, 144, 0.1);
+    box-shadow: 0 5px 15px rgba(233, 30, 99, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -222,13 +226,13 @@
 }
 
 .check-icon {
-    color: #e8a890;
+    color: var(--color-primary);
     flex-shrink: 0;
     margin-top: 0.2rem;
 }
 
 .include-item p {
-    color: #5a4a42;
+    color: var(--color-text);
     line-height: 1.6;
     margin: 0;
     font-size: 1.05rem;
@@ -251,10 +255,10 @@
     display: flex;
     gap: 2rem;
     align-items: flex-start;
-    background: linear-gradient(135deg, #fef5f1 0%, #faf8f6 100%);
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-bg) 100%);
     padding: 2rem;
     border-radius: 16px;
-    box-shadow: 0 5px 20px rgba(232, 168, 144, 0.1);
+    box-shadow: 0 5px 20px rgba(233, 30, 99, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -265,9 +269,10 @@
 .how-number {
     font-size: 3rem;
     font-weight: 700;
-    color: #e8a890;
+    color: var(--color-primary);
     line-height: 1;
     min-width: 60px;
+    font-family: 'Playfair Display', serif;
 }
 
 .how-content {
@@ -275,20 +280,20 @@
 }
 
 .how-content p {
-    color: #6b5b54;
+    color: var(--color-text-light);
     line-height: 1.7;
     font-size: 1.05rem;
 }
 
 /* For Who Section */
 .membresia-for-who {
-    background: linear-gradient(135deg, #fef5f1 0%, #faf8f6 100%);
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-bg) 100%);
 }
 
 .for-who-intro {
     text-align: center;
     font-size: 1.25rem;
-    color: #5a4a42;
+    color: var(--color-text);
     margin-bottom: 2.5rem;
     font-weight: 500;
 }
@@ -304,17 +309,17 @@
     background: #fff;
     padding: 2rem;
     border-radius: 12px;
-    border-left: 4px solid #e8a890;
+    border-left: 4px solid var(--color-primary);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .for-who-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(232, 168, 144, 0.15);
+    box-shadow: 0 10px 30px rgba(233, 30, 99, 0.15);
 }
 
 .for-who-card p {
-    color: #5a4a42;
+    color: var(--color-text);
     line-height: 1.6;
     margin: 0;
     font-size: 1.05rem;
@@ -328,15 +333,15 @@
 .pricing-card {
     max-width: 600px;
     margin: 3rem auto 0;
-    background: linear-gradient(135deg, #fef5f1 0%, #fff 100%);
+    background: linear-gradient(135deg, var(--color-secondary) 0%, #fff 100%);
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 15px 50px rgba(232, 168, 144, 0.2);
-    border: 2px solid #e8a890;
+    box-shadow: 0 15px 50px rgba(233, 30, 99, 0.2);
+    border: 2px solid var(--color-primary);
 }
 
 .pricing-header {
-    background: linear-gradient(135deg, #e8a890 0%, #d89880 100%);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-link-hover) 100%);
     color: #fff;
     padding: 3rem 2rem;
     text-align: center;
@@ -350,6 +355,7 @@
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
+    font-family: 'Playfair Display', serif;
 }
 
 .pricing-amount {
@@ -364,6 +370,7 @@
     font-size: 4rem;
     font-weight: 700;
     line-height: 1;
+    font-family: 'Playfair Display', serif;
 }
 
 .pricing-amount .period {
@@ -385,8 +392,8 @@
     align-items: center;
     gap: 1rem;
     padding: 1rem 0;
-    border-bottom: 1px solid rgba(232, 168, 144, 0.1);
-    color: #5a4a42;
+    border-bottom: 1px solid rgba(233, 30, 99, 0.1);
+    color: var(--color-text);
     font-size: 1.05rem;
 }
 
@@ -395,13 +402,13 @@
 }
 
 .feature-item svg {
-    color: #e8a890;
+    color: var(--color-primary);
     flex-shrink: 0;
 }
 
 /* CTA Section */
 .membresia-cta {
-    background: linear-gradient(135deg, #e8a890 0%, #d89880 100%);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-link-hover) 100%);
     padding: 6rem 5%;
     text-align: center;
 }
@@ -434,7 +441,7 @@
     align-items: center;
     gap: 0.75rem;
     background: #fff;
-    color: #e8a890;
+    color: var(--color-primary);
     padding: 1.2rem 2.5rem;
     border-radius: 50px;
     font-size: 1.1rem;
@@ -447,7 +454,7 @@
 .membresia-cta-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
-    background: #fef5f1;
+    background: var(--color-bg);
 }
 
 /* Responsive Design */
